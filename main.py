@@ -20,6 +20,16 @@ async def on_ready():
     await client.change_presence(activity=game)
 
 
+@client.event
+async def on_guild_join(guild: discord.Guild):
+    print('Joined guild: {}'.format(guild.name))
+
+
+@client.event
+async def on_guild_remove(guild: discord.Guild):
+    print('Left guild: {}'.format(guild.name))
+
+
 @client.command(aliases=['pr'])
 async def prcheck(ctx, user: discord.Member = None):
     if user:
