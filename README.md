@@ -8,7 +8,7 @@
 | *earnings @user | (Alias: *earningscheck) The bot will return earnings information about the mentioned user. |
 
 ## Adding the bot
-**Use the following link**: [https://discord.com/oauth2/authorize?client_id=861209215661637642&permissions=84992&scope=bot]()
+**Use the following link**: https://discord.com/oauth2/authorize?client_id=861209215661637642&permissions=84992&scope=bot
 
 ## Self-hosting
 1. Create a new application in the Discord Developer Portal and add a bot to the application.
