@@ -42,9 +42,9 @@ async def prcheck(ctx, user: discord.Member = None):
             await ctx.send(buildmsg(fnrprofile, fntprofile, user))
         else:
             await ctx.send(
-                user.mention + "This user's Epic account is not properly connected with this Discord server. Unable to PR check.")
+                user.mention + " This user's Epic account is not properly connected with this Discord server. Unable to PR check.")
     else:
-        ctx.send('Commands usage: *prcheck @user')
+        await ctx.send('Commands usage: *prcheck @user')
 
 
 @client.command(aliases=['earnings'])
@@ -57,7 +57,7 @@ async def earningscheck(ctx, user: discord.Member = None):
         else:
             await ctx.send('Unable to load profiles...')
     else:
-        ctx.send('Commands usage: *prcheck @user')
+        await ctx.send('Commands usage: *earnings @user')
 
 
 def buildmsg(fnr, fnt, user: discord.Member):
